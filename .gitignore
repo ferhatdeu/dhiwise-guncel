@@ -22,3 +22,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+src/pages/EKYCBegin/index copy.jsx
+src/pages/EKYCConfirmInformation/index copy.jsx
+src/pages/EKYCIntroductionStepFour/index copy.jsx
+src/pages/EKYCIntroductionStepTwo/index copy.jsx
+src/pages/EKYCIntroductionStepThree/index copy.jsx
+src/pages/EKYCIntroductionStepOne/index copy.jsx
+src/pages/EKYCScanFace/index copy.jsx
+src/pages/EKYCScanIDCardAddimage/index copy.jsx
+src/pages/EKYCSignature/index copy.jsx
+src/pages/EKYCSuccessful/index copy.jsx
