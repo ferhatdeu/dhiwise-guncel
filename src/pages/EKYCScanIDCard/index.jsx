@@ -20,12 +20,7 @@ const EKYCScanIDCardPage = () => {
   const navigate = useNavigate();
 
   return (
-    <>
-      <div className="bg-gray-105 flex sm:flex-col md:flex-col flex-row font-inter sm:gap-5 md:gap-5 items-start justify-start mx-auto w-auto sm:w-full md:w-full">
-        <Sidebar1 className="!sticky !w-[241px] bg-white-A700 flex h-screen md:hidden justify-start overflow-auto md:px-5 top-[0]" />
-        <Line className="bg-indigo-50 h-[950px] md:h-px md:w-full w-px" />
-        <div className="flex flex-1 flex-col gap-8 items-center justify-start md:px-5 w-full">
-          <ShopDetailItemHeader className="bg-white-A700 flex h-[60px] md:h-auto items-center justify-between sm:px-5 px-[23px] py-2.5 w-full" />
+    <>   
           <div className="flex flex-col items-center justify-start sm:px-5 px-6 w-full">
             <div className="flex flex-col gap-8 items-center justify-start w-full">
               <div className="flex flex-row md:gap-10 items-center justify-between w-full">
@@ -33,19 +28,12 @@ const EKYCScanIDCardPage = () => {
                   className="text-bluegray-900 text-xl w-auto"
                   size="txtPoppinsMedium20"
                 >
-                  eKYC
+                  Kimlik Doğrulama
                 </Text>
                 <Text
                   className="text-base text-bluegray-400 text-right w-auto"
                   size="txtInterRegular16"
                 >
-                  <span className="text-bluegray-400 font-inter font-normal">
-                    Setting/
-                  </span>
-                  <span className="text-bluegray-800 font-inter font-normal">
-                    {" "}
-                    eKYC
-                  </span>
                 </Text>
               </div>
               <div className="bg-white-A700 flex flex-col items-center justify-center sm:px-5 px-8 py-12 rounded shadow-bs w-full">
@@ -57,14 +45,13 @@ const EKYCScanIDCardPage = () => {
                           className="text-2xl md:text-[22px] text-bluegray-900 text-center sm:text-xl w-full"
                           size="txtInterBold24"
                         >
-                          Scan ID Card
+                          Kimlik fotoğrafınızı yükleyin
                         </Text>
                         <Text
                           className="text-bluegray-400 text-center text-sm w-full"
                           size="txtInterRegular14Bluegray400"
                         >
-                          Please ensure that the image that you uploaded is
-                          clear and not blurred
+                          Yüklediğiniz resim dosyasının net ve bulanık olmamasına dikkat edin.
                         </Text>
                       </div>
                       <SelectBox
@@ -81,7 +68,7 @@ const EKYCScanIDCardPage = () => {
                         name="group_One"
                         options={selectTypeOfCardOptionsList}
                         isSearchable={false}
-                        placeholder="Select type of Card"
+                        placeholder="Kimlik türünü seçiniz"
                       />
                     </div>
                     <List
@@ -94,7 +81,7 @@ const EKYCScanIDCardPage = () => {
                             className="text-base text-bluegray-800 text-center w-full"
                             size="txtInterSemiBold16"
                           >
-                            Front
+                            Ön Yüz
                           </Text>
                           <div className="flex flex-col gap-6 items-center justify-start w-auto">
                             <Button className="bg-red-52 flex h-14 items-center justify-center p-[18px] rounded-[50%] w-14">
@@ -108,7 +95,7 @@ const EKYCScanIDCardPage = () => {
                               className="leading-[22.00px] max-w-[146px] md:max-w-full text-bluegray-400 text-center text-sm"
                               size="txtInterRegular14Bluegray400"
                             >
-                              Drag or click to upload image
+                              Resim yüklemek için tıklayınız
                             </Text>
                           </div>
                         </div>
@@ -119,7 +106,7 @@ const EKYCScanIDCardPage = () => {
                             className="text-base text-bluegray-800 text-center w-full"
                             size="txtInterSemiBold16"
                           >
-                            Back
+                            Arka Yüz
                           </Text>
                           <div className="flex flex-col gap-6 items-center justify-start w-auto">
                             <Button className="bg-red-52 flex h-14 items-center justify-center p-[18px] rounded-[50%] w-14">
@@ -133,7 +120,7 @@ const EKYCScanIDCardPage = () => {
                               className="leading-[22.00px] max-w-[146px] md:max-w-full text-bluegray-400 text-center text-sm"
                               size="txtInterRegular14Bluegray400"
                             >
-                              Drag or click to upload image
+                              Resim yüklemek için tıklayınız
                             </Text>
                           </div>
                         </div>
@@ -141,14 +128,13 @@ const EKYCScanIDCardPage = () => {
                     </List>
                   </div>
                   <Button className="bg-deep_orange-300 cursor-pointer font-bold min-w-[270px] py-[15px] rounded-[24px] text-center text-sm text-white-A700" onClick={() => navigate("/ekycscanidcardaddimage")}>
-                    Next Step
+                    İlerle
                   </Button>
                 </div> 
               </div>
             </div>
           </div>
-        </div>
-      </div>
+
     </>
   );
 };

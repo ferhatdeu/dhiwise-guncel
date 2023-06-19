@@ -14,12 +14,7 @@ const EKYCSignaturePage = () => {
   const navigate = useNavigate();
 
   return (
-    <>
-      <div className="bg-gray-105 flex sm:flex-col md:flex-col flex-row font-inter sm:gap-5 md:gap-5 items-start justify-start mx-auto w-auto sm:w-full md:w-full">
-        <Sidebar1 className="!sticky !w-[241px] bg-white-A700 flex h-screen md:hidden justify-start overflow-auto md:px-5 top-[0]" />
-        <Line className="bg-indigo-50 h-[950px] md:h-px md:w-full w-px" />
-        <div className="flex flex-1 flex-col gap-8 items-center justify-start md:px-5 w-full">
-          <ShopDetailItemHeader className="bg-white-A700 flex h-[60px] md:h-auto items-center justify-between sm:px-5 px-[23px] py-2.5 w-full" />
+    <>    
           <div className="flex flex-col items-center justify-start sm:px-5 px-6 w-full">
             <div className="flex flex-col gap-8 items-center justify-start w-full">
               <div className="flex flex-row md:gap-10 items-center justify-between w-full">
@@ -27,19 +22,12 @@ const EKYCSignaturePage = () => {
                   className="text-bluegray-900 text-xl w-auto"
                   size="txtPoppinsMedium20"
                 >
-                  eKYC
+                   Kimlik Doğrulama
                 </Text>
                 <Text
                   className="text-base text-bluegray-400 text-right w-auto"
                   size="txtInterRegular16"
                 >
-                  <span className="text-bluegray-400 font-inter font-normal">
-                    Setting/
-                  </span>
-                  <span className="text-bluegray-800 font-inter font-normal">
-                    {" "}
-                    eKYC
-                  </span>
                 </Text>
               </div>
               <div className="bg-white-A700 flex flex-col items-center justify-center md:px-10 sm:px-5 px-[236px] py-12 rounded shadow-bs w-full">
@@ -49,13 +37,13 @@ const EKYCSignaturePage = () => {
                       className="text-2xl md:text-[22px] text-bluegray-900 text-center sm:text-xl w-full"
                       size="txtInterBold24"
                     >
-                      Signature
+                      İmza
                     </Text>
                     <Text
                       className="text-bluegray-400 text-center text-sm w-full"
                       size="txtInterRegular14Bluegray400"
                     >
-                      Make sure that all your information are precise
+                      Bilgilerin doğru olmasına dikkat ediniz
                     </Text>
                   </div>
                   <div className="bg-gray-50 border-2 border-dashed border-indigo-50 flex flex-col items-end justify-start p-[31px] sm:px-5 rounded w-full">
@@ -79,14 +67,13 @@ const EKYCSignaturePage = () => {
                     </div>
                   </div>
                   <Button className="bg-deep_orange-300 cursor-pointer font-bold min-w-[270px] py-[15px] rounded-[24px] text-center text-sm text-white-A700" onClick={() => navigate("/ekycsuccessful")}>
-                    Finish process
+                    Süreci Tamamla
                   </Button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+
     </>
   );
 };
